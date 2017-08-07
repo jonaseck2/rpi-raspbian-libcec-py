@@ -44,5 +44,3 @@ RUN apt-get -qqy update \
  && rm -rf platform libcec raspberrypi-userland*
 
 ENV LD_LIBRARY_PATH=/opt/vc/lib:${LD_LIBRARY_PATH}
-
-WORKDIR /config/
