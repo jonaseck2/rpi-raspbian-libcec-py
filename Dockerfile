@@ -43,4 +43,4 @@ RUN apt-get -qqy update \
  && cd \
  && rm -rf platform libcec raspberrypi-userland*
 
-ENV LD_LIBRARY_PATH=/opt/vc/lib:${LD_LIBRARY_PATH}
+ENV LD_LIBRARY_PATH=/opt/vc/lib:${LD_LIBRARY_PATH} PYTHONPATH=${PYTHONPATH}/usr/lib/python3.6/site-packages
